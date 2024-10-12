@@ -1,0 +1,52 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "method": "POST",
+        "url": "/price-verifications",
+        "bodyPatterns": [
+          {
+            "equalToJson": {
+              "barcode1": "93682978",
+              "barcode2": "93682978"
+            }
+          }
+        ]
+      },
+      "response": {
+        "status": "400",
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "status": "400",
+          "message": "Double scan"
+        }
+      }
+    },
+    {
+        "request": {
+          "method": "POST",
+          "url": "/price-verifications",
+          "bodyPatterns": [
+            {
+              "equalToJson": {
+                "barcode1": "8855951001192",
+                "barcode2": "88808855951001192010"
+              }
+            }
+          ]
+        },
+        "response": {
+          "status": "200",
+          "headers": {
+            "Content-Type": "application/json"
+          },
+          "jsonBody": {
+            "status": "200",
+            "message": "OK"
+          }
+        }
+      }
+  ]
+}

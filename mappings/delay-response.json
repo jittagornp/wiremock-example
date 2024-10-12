@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/delay"
+  },
+  "response": {
+    "status": 200,
+    "fixedDelayMilliseconds": 5000,
+    "body": "This is response after delay 5,000 millisecons",
+    "headers": {
+      "Content-Type": "text/plain"
+    }
+  }
+}

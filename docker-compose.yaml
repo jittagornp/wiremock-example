@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  wiremock:
+    image: wiremock/wiremock:3.9.1
+    container_name: wiremock
+    ports:
+      - "8060:8060"
+    environment:
+      - WIREMOCK_OPTIONS=--port 8060 --verbose
+    volumes:
+      - ./extensions:/var/wiremock/extensions
+      - ./__files:/home/wiremock/__files
+      - ./mappings:/home/wiremock/mappings 
+    restart: always

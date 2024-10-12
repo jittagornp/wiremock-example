@@ -1,0 +1,15 @@
+{
+  "request": {
+    "urlPathTemplate": "/products/{barcode}",
+    "method": "GET",
+    "pathParameters": {
+      "barcode": {
+        "equalTo": "8850238050115"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "body": "OK"
+  }
+}

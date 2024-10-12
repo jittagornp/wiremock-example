@@ -1,0 +1,21 @@
+{
+  "request": {
+    "urlPathTemplate": "/product-items/{productId}"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "id": "{{request.path.productId}}",
+      "barcode": "{{randomValue length=14 type='NUMERIC'}}",
+      "description": "{{randomValue length=30 type='ALPHABETIC'}}",
+      "secondary_description": "{{randomValue length=50 type='ALPHABETIC' uppercase=true}}",
+      "fdn": "{{randomValue length=13 type='NUMERIC'}}",
+      "price": "{{numberFormat (randomDecimal lower=1 upper=1000) '#,###,##0.000'}}",
+      "traceId": "{{randomValue type='UUID'}}"
+    },
+    "transformers": ["response-template"]
+  }
+}

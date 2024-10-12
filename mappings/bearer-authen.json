@@ -1,0 +1,21 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/label-request",
+    "headers": {
+      "Authorization": {
+        "matches": "^Bearer\\s.*",
+        "caseInsensitive": true
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "batch_id": 1
+    }
+  }
+}

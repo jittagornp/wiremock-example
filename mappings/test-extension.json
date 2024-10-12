@@ -1,0 +1,10 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/test-extension"
+  },
+  "response": {
+    "status": 200,
+    "transformers": ["loader-test"]
+  }
+}

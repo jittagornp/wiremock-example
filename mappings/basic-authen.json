@@ -1,0 +1,19 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/print",
+    "basicAuth": {
+      "username": "tony",
+      "password": "password"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "status": "Success"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "request": {
+    "urlPath": "/products",
+    "method": "GET",
+    "queryParameters": {
+      "keyword": {
+        "equalTo": "43"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "status": "OK",
+      "data": [
+        {
+          "product_id": 81500,
+          "barcode": "2200067815007",
+          "store_number": 1,
+          "country_code": "TH",
+          "description": "รองเท้าผ้าใบ 37-42:ขาว:43",
+          "secondary_description": "BOY STUDENT SHOES 37-42:ขาว:43",
+          "short_description": "รองเท้าผ้าใบ"
+        }
+      ],
+      "page": {
+        "last": false,
+        "total_pages": 30,
+        "total_elements": 148,
+        "size": 5,
+        "number": 0,
+        "number_of_elements": 5,
+        "first": true,
+        "empty": false
+      }
+    }
+  }
+}
